@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+      crossorigin="anonymous">
+      </script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>N-iX test</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand navbar-light bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <svg width="71" height="26" viewBox="0 0 71 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0.963346C0 0.446429 0.4317 0 0.983316 0H4.0292C4.55683 0 5.42023 0.093985 5.94786 0.211466C5.94786 0.211466 6.73931 0.37594 7.31491 1.2218L14.5579 12.2415C14.8457 12.688 15.3014 13.4164 15.5892 13.8628C15.5892 13.8628 17.0521 16.2829 18.3712 19.4314C17.6997 16.0714 17.5078 14.4972 17.5078 12.5V0.963346C17.5078 0.446429 17.9395 0 18.4911 0H22.0407C22.5683 0 23 0.422932 23 0.963346V24.0132C23 24.5301 22.5683 24.9765 22.0407 24.9765H18.9708C18.4432 24.9765 17.5798 24.8825 17.0521 24.765C17.0521 24.765 16.2607 24.6006 15.6851 23.7547L8.44213 12.735C8.15433 12.2885 7.69864 11.5602 7.41084 11.1137C7.41084 11.1137 5.94786 8.69361 4.62878 5.54511C5.27633 8.90508 5.49218 10.4793 5.49218 12.4295V24.0367C5.49218 24.5536 5.06048 25 4.50886 25H0.983316C0.455683 25 0 24.5771 0 24.0367V0.963346Z"
+                fill="#F7912E" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M42.5802 5.47874C44.066 5.47874 45.2689 4.25323 45.2689 2.73937C45.2689 1.22551 44.066 0 42.5802 0C41.0943 0 39.8915 1.22551 39.8915 2.73937C39.8915 4.25323 41.0943 5.47874 42.5802 5.47874ZM39.8915 9.44362C39.8915 8.91497 40.316 8.45841 40.8585 8.45841H44.3491C44.8679 8.45841 45.316 8.89094 45.316 9.44362V25.0148C45.316 25.5434 44.8915 26 44.3491 26H40.8349C40.316 26 39.8679 25.5675 39.8679 25.0148V9.44362H39.8915ZM26 14.1054C26 13.5767 26.4245 13.1201 26.967 13.1201H36.0236C36.5425 13.1201 36.967 13.5527 36.967 14.1054V16.5804C36.967 17.1091 36.5425 17.5656 36.0236 17.5656H26.967C26.4481 17.5656 26 17.1331 26 16.5804V14.1054ZM46.8019 26L46.8153 25.976H52.3208C52.8396 25.976 53.4292 25.6396 53.6179 25.2551C54.8915 22.8281 57.4858 18.2384 57.4858 18.2384C57.6154 18.0104 57.7921 17.7043 57.9689 17.3983L57.9693 17.3974L57.9701 17.3961C58.1467 17.0901 58.3233 16.7843 58.4528 16.5564L58.6415 16.244C59.7264 17.9982 60.3396 19.1035 61.6604 21.5065C62.6981 23.4048 63.5943 25.1109 63.5943 25.1109C63.8302 25.5915 64.467 25.976 64.9858 25.976H71C70.8113 25.6395 70.6698 25.3992 70.546 25.189L70.5458 25.1887C70.4221 24.9786 70.316 24.7984 70.1981 24.5823C69.8238 23.9149 69.3434 23.1935 68.83 22.4224C68.4376 21.833 68.0258 21.2147 67.6274 20.5693C66.2123 18.2865 63.5 14.4658 63.5 14.4658C63.3684 14.2536 62.7119 13.3611 61.9474 12.3218L61.9473 12.3217C61.0673 11.1253 60.0442 9.73455 59.5142 8.96303C57.4623 5.93531 54.9623 1.99445 54.9623 1.99445C54.7028 1.51386 54.4198 0.985213 54.3255 0.792976C54.2311 0.600739 53.7123 0.456562 53.1934 0.456562H48.2406C47.7217 0.456562 47.3915 0.600739 47.4858 0.768946C47.5585 0.917017 47.7571 1.26468 47.9631 1.62525L47.9631 1.62534C48.0246 1.73286 48.0866 1.84153 48.1462 1.9464L48.6179 2.78743C49.3962 4.15712 50.9057 6.63216 52.0613 8.41035C52.7453 9.46765 54.0189 11.39 54.0189 11.39C54.1191 11.5432 54.2253 11.7025 54.3248 11.8517L54.3248 11.8517L54.3249 11.8519C54.5063 12.124 54.6655 12.3628 54.7264 12.4713C54.8208 12.6396 54.8208 12.8799 54.7264 13.0481C54.6792 13.1322 54.5731 13.2944 54.4434 13.4926L54.4434 13.4926C54.3137 13.6909 54.1604 13.9252 54.0189 14.1534L53.5 14.9464C51.1944 18.47 48.6072 22.7587 46.8153 25.976H46.8019V26ZM63.8774 1.12939C62.3679 3.96488 60.3396 7.44917 60.3396 7.44917L63.5472 11.7745L64.6085 9.9963L69.6321 1.92237C69.7877 1.64845 69.9688 1.34858 70.1092 1.11617C70.2028 0.961205 70.2783 0.836235 70.316 0.768946C70.434 0.600739 70.0802 0.456562 69.5613 0.456562H65.1745C64.6557 0.456562 64.066 0.744917 63.8774 1.12939Z"
+                fill="#4D4F54" />
+            </svg>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services <i class="fas fa-angle-down"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Expertise <i class="fas fa-angle-down"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Industries <i class="fas fa-angle-down"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Technologies <i class="fas fa-angle-down"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Success stories <i class="fas fa-angle-down"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Company <i class="fas fa-angle-down"></i></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link contact_btn" href="#">Get in touch</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <nav aria-label="breadcrumb">
+      <div class="container">
+        <div class="row">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Success Stories</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Clients</li>
+          </ol>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-7 contact_card">
+            <h3>Contact us</h3>
+            <h5>Drop a message to our team to see how we can help</h5>
+            <form>
+              <div class="form-group">
+                <input type="text" id="name" class="form-control" required />
+                <label class="form-control-placeholder" for="name">Your Full Name</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="email" class="form-control" required />
+                <label class="form-control-placeholder" for="email">Your Email</label>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" class="form-control" required />
+                <label class="form-control-placeholder" for="phone">Your Phone Number</label>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+
+                <label class="form-control-placeholder" for="message">Message</label>
+                <small class="form-text text-muted">Up to 3 attachments. The total size of attachments should not
+                  exceed 5Mb.</small>
+                <label for="upload" class="clip_orange">
+                  <span class="fas fa-paperclip"></span>
+                  <input type="file" id="upload">
+                </label>
+              </div>
+              <div class="mdc-form-field">
+                <div class="mdc-checkbox">
+                  <input type="checkbox" class="mdc-checkbox__native-control" id="terms" required />
+                  <div class="mdc-checkbox__background">
+                    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                      <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                    </svg>
+                    <div class="mdc-checkbox__mixedmark"></div>
+                  </div>
+                </div>
+                <label for="terms" class="required">I have read and accepted the Terms & Conditions and Privacy Policy.</label>
+              </div>
+              <div class="mdc-form-field">
+                <div class="mdc-checkbox">
+                  <input type="checkbox" class="mdc-checkbox__native-control" id="newsletter" />
+                  <div class="mdc-checkbox__background">
+                    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                      <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                    </svg>
+                    <div class="mdc-checkbox__mixedmark"></div>
+                  </div>
+                </div>
+                <label for="newsletter">I would like to be updated on latest products, event announcements, and
+                  thought
+                  leadership.</label>
+              </div>
+              <div class="form-group submit_group">
+                <button type="submit" class="btn btn-warning">Send message</button>
+                <div class="privacy_msg">Your privacy is protected</div>
+              </div>
+            </form>
+          </div>
+          <div class="col-5 companies">
+            <h3>Trusted By</h3>
+            <div class="img_grid mb-5">
+              <img src="img/01-lebara.png" srcset="img/01-lebara@2x.png 2x, img/01-lebara@3x.png 3x" class="-lebara" />
+              <img src="img/02-gogo.png" srcset="img/02-gogo@2x.png 2x, img/02-gogo@3x.png 3x" class="-gogo" />
+              <img src="img/02-gogo.png" srcset="img/02-gogo@2x.png 2x, img/02-gogo@3x.png 3x" class="-gogo" />
+              <img src="img/08-opentext.png" srcset="img/08-opentext@2x.png 2x, img/08-opentext@3x.png 3x" class="-opentext" />
+              <img src="img/04-ratesetter.png" srcset="
+                  img/04-ratesetter@2x.png 2x,
+                  img/04-ratesetter@3x.png 3x
+                "
+                class="-ratesetter" />
+              <img src="img/03-currencycloud.png" srcset="
+                  img/03-currencycloud@2x.png 2x,
+                  img/03-currencycloud@3x.png 3x
+                "
+                class="-currencycloud" />
+              <img src="img/image.png" srcset="img/image@2x.png 2x, img/image@3x.png 3x" class="image" />
+              <img src="img/07-streamserve.png" srcset="
+                  img/07-streamserve@2x.png 2x,
+                  img/07-streamserve@3x.png 3x
+                "
+                class="-streamserve" />
+              <img src="img/04-ratesetter.png" srcset="
+                  img/04-ratesetter@2x.png 2x,
+                  img/04-ratesetter@3x.png 3x
+                "
+                class="-ratesetter" />
+            </div>
+            <h3>Industry Recognition</h3>
+            <div class="img_grid mb-5">
+              <div class="img_wrap">
+                <img src="img/eba-logo-1024-x-595.png" srcset="
+                    img/eba-logo-1024-x-595@2x.png 2x,
+                    img/eba-logo-1024-x-595@3x.png 3x
+                  "
+                  class="EBA_logo-1024x595" />
+              </div>
+              <div class="img_wrap">
+                <img src="img/eitsea-finalist-logo-e-1490787142926.png" srcset="
+                    img/eitsea-finalist-logo-e-1490787142926@2x.png 2x,
+                    img/eitsea-finalist-logo-e-1490787142926@3x.png 3x
+                  "
+                  class="EITSEA-Finalist-Logo-e1490787142926" />
+              </div>
+              <div class="img_wrap">
+                <img src="img/ms-partner-logo-1-1024-x-528.png" srcset="
+                    img/ms-partner-logo-1-1024-x-528@2x.png 2x,
+                    img/ms-partner-logo-1-1024-x-528@3x.png 3x
+                  "
+                  class="ms-partner-logo_1-1024x528" />
+              </div>
+              <div class="img_wrap">
+                <img src="img/opentext-partner-services-silver-20171-1024-x-254.png" srcset="
+                    img/opentext-partner-services-silver-20171-1024-x-254@2x.png 2x,
+                    img/opentext-partner-services-silver-20171-1024-x-254@3x.png 3x
+                  "
+                  class="opentext-Partner-Services-Silver-20171-1024x254" />
+              </div>
+              <div class="img_wrap">
+                <img src="img/iso-27001.png" srcset="img/iso-27001@2x.png 2x, img/iso-27001@3x.png 3x" class="ISO-27001" />
+              </div>
+              <div class="img_wrap">
+                <img src="img/it-outsourcing-companies-2017.png" srcset="
+                    img/it-outsourcing-companies-2017@2x.png 2x,
+                    img/it-outsourcing-companies-2017@3x.png 3x
+                  "
+                  class="it_outsourcing_companies_2017" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="info pt-5 ">
+      <div class="container">
+        <div class="testimonials">
+          <div class="slider">
+            <div class="slide">
+              <div class="inner">
+                <div class="img_placeholder"></div>
+                <div class="slide_content">
+                  <p>Essentially, and very importantly, the partnership allows us to service our global migrant
+                    customers
+                    better wherever
+                    they might be. Working with N-iX helped us go to market with new digital products quickly.
+                    Essentially, and very
+                    importantly, the partnership allows us to service our global migrant customers better.</p>
+                  <div class="customer_info">
+                    <img src="img/united-kingdom.svg" class="flag">
+                    <h5>Rachel Ninaber</h5>
+                    <h6>VP of Engineering, Lebara</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="inner">
+                <div class="img_placeholder"></div>
+                <div class="slide_content">
+                  <p>Essentially, and very importantly, the partnership allows us to service our global migrant
+                    customers
+                    better wherever
+                    they might be. Working with N-iX helped us go to market with new digital products quickly.
+                    Essentially, and very
+                    importantly, the partnership allows us to service our global migrant customers better.</p>
+                  <div class="customer_info">
+                    <img src="img/united-kingdom.svg" class="flag">
+                    <h5>Rachel Ninaber</h5>
+                    <h6>VP of Engineering, Lebara</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="inner">
+                <div class="img_placeholder"></div>
+                <div class="slide_content">
+                  <p>Essentially, and very importantly, the partnership allows us to service our global migrant
+                    customers
+                    better wherever
+                    they might be. Working with N-iX helped us go to market with new digital products quickly.
+                    Essentially, and very
+                    importantly, the partnership allows us to service our global migrant customers better.</p>
+                  <div class="customer_info">
+                    <img src="img/united-kingdom.svg" class="flag">
+                    <h5>Rachel Ninaber</h5>
+                    <h6>VP of Engineering, Lebara</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="inner">
+                <div class="img_placeholder"></div>
+                <div class="slide_content">
+                  <p>Essentially, and very importantly, the partnership allows us to service our global migrant
+                    customers
+                    better wherever
+                    they might be. Working with N-iX helped us go to market with new digital products quickly.
+                    Essentially, and very
+                    importantly, the partnership allows us to service our global migrant customers better.</p>
+                  <div class="customer_info">
+                    <img src="img/united-kingdom.svg" class="flag">
+                    <h5>Rachel Ninaber</h5>
+                    <h6>VP of Engineering, Lebara</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials_nav">
+            <div class="testimonialsDots"></div>
+            <div class="testimonialsArrows"></div>
+          </div>
+        </div>
+        <h3 class="mb-4">Our offices</h3>
+        <div class="row">
+          <div class="accordion col-4 pl-0" id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-location="#lviv" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Ukraine(Lviv)
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <h5>Head office</h5>
+                  <p><span>32 Storozhenka St., Lviv, 79018, Ukraine</span></p>
+                  <p><b>Email: <a href="#">contact@n-ix.com</a></b></p>
+                  <p><b>Tel: </b> +380 322 295 767</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-location="#kyiv" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Ukraine(Kyiv)
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                  wolf moon
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-location="#krakow" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Poland(Kraków)
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                  wolf moon
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-location="#malmo" data-toggle="collapse"
+                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Sweden(MALMO)
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                  wolf moon
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-location="#fl" data-toggle="collapse"
+                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    USA
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                  wolf moon
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map_points">
+            <img src="img/bitmap.png" alt="Map" class="map">
+
+            <div class="point" id="krakow" style="
+                top: 32%;
+                right: 10%;
+            ">
+              <div class="text left">KRAKÓW, POLAND</div>
+            </div>
+            <div class="point" id="kyiv" style="
+                right: 7%;
+                top: 31%;
+            ">
+              <div class="text right">KYIV,
+                UKRAINE</div>
+            </div>
+            <div class="point" id="lviv" style="
+                right: 8%;
+                top: 33%;
+            ">
+              <div class="text bottom">LVIV, UKRAINE</div>
+            </div>
+            <div class="point" id="malmo" style="
+                top: 25%;
+                right: 12%;
+            ">
+              <div class="text bottom">MALMO, SWEDEN</div>
+            </div>
+            <div class="point" id="fl" style="
+                left: 54%;
+                top: 48%;
+            ">
+              <div class="text right">FL, USA</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="connect">
+      <h3>Connect with our experts</h3>
+      <a href="#" class="btn btn-warning"> Get in touch</a>
+    </section>
+    <footer class="pt-4 pb-4">
+      <div class="container pl-0 pr-0">
+        <div class="row">
+          <div class="col-2">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#">Dedicated Development Team</a></li>
+              <li><a href="#">Software Product Development</a></li>
+              <li><a href="#">Mobile Application Development</a></li>
+              <li><a href="#">OpenText Professional Services</a></li>
+              <li><a href="#">SAP Consulting</a></li>
+              <li><a href="#">Game Development & VR</a></li>
+              <li><a href="#">Game Art Production</a></li>
+              <li><a href="#">Software QA & Testing</a></li>
+              <li><a href="#">Technical Support</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h5>Expertise</h5>
+            <ul>
+              <li><a href="#">Digital Transformation</a></li>
+              <li><a href="#">Business Intelligence</a></li>
+              <li><a href="#">Machine Learning & AI</a></li>
+              <li><a href="#">Data Science</a></li>
+              <li><a href="#">Big Data</a></li>
+              <li><a href="#">Blockchain</a></li>
+              <li><a href="#">Virtual Reality</a></li>
+              <li><a href="#">Enterprise Mobility</a></li>
+              <li><a href="#">Customer Communications Management</a></li>
+              <li><a href="#">Enterprise Content Management</a></li>
+              <li><a href="#">UI/UX</a></li>
+              <li><a href="#">IoT Solutions</a></li>
+              <li><a href="#">Embedded Software</a></li>
+              <li><a href="#">High Load Systems</a></li>
+              <li><a href="#">Cloud Solutions</a></li>
+              <li><a href="#">DevOps</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h5>Industries</h5>
+            <ul>
+              <li><a href="#">FinTech</a></li>
+              <li><a href="#">InsurTech</a></li>
+              <li><a href="#">Finance & Banking</a></li>
+              <li><a href="#">Hi-Tech</a></li>
+              <li><a href="#">Telecom</a></li>
+              <li><a href="#">Media & Entertainment</a></li>
+              <li><a href="#">Healthcare</a></li>
+              <li><a href="#">Hospitality</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Energy</a></li>
+              <li><a href="#">Manufacturing</a></li>
+              <li><a href="#">Agritech</a></li>
+              <li><a href="#">Automotive</a></li>
+              <li><a href="#">Aviation Technology</a></li>
+              <li><a href="#">Retail</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h5>Technologies</h5>
+            <ul>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">Scala</a></li>
+              <li><a href="#">.NET</a></li>
+              <li><a href="#">Unity 3D</a></li>
+              <li><a href="#">Hybris</a></li>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">Ruby</a></li>
+              <li><a href="#">C/C++</a></li>
+              <li><a href="#">Unreal Engine</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">iOS</a></li>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Photon Engine</a></li>
+              <li><a href="#">Golang</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h5>Success Stories</h5>
+            <ul>
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Articles</a></li>
+            </ul>
+            <div class="footer_contacts">
+              <h5>Call us at:</h5>
+              <a href="#" class="tel_num">+380 322 295 767</a>
+              <h5>Follow us on</h5>
+              <div class="social">
+                <a href="#" class="social_link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social_link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social_link"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social_link"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">Company Overview</a></li>
+              <li><a href="#">Industry Recognition</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="articles">
+          <h5>
+            Latest in Blog:
+          </h5>
+          <div class="footer_slider">
+
+            <a href="#" class="article_link">
+              <div class="date">
+                Nov<br>15
+              </div>
+              <div class="title">
+                <h6>29 facts about outsourced software engineering in Eastern Europe</h6>
+              </div>
+            </a>
+            <a href="#" class="article_link">
+              <div class="date">
+                Nov<br>15
+              </div>
+              <div class="title">
+                <h6>29 facts about outsourced software engineering in Eastern Europe</h6>
+              </div>
+            </a>
+            <a href="#" class="article_link">
+              <div class="date">
+                Nov<br>15
+              </div>
+              <div class="title">
+                <h6>29 facts about outsourced software engineering in Eastern Europe</h6>
+              </div>
+            </a>
+            <a href="#" class="article_link">
+              <div class="date">
+                Nov<br>15
+              </div>
+              <div class="title">
+                <h6>29 facts about outsourced software engineering in Eastern Europe</h6>
+              </div>
+            </a>
+            <a href="#" class="article_link">
+              <div class="date">
+                Nov<br>15
+              </div>
+              <div class="title">
+                <h6>29 facts about outsourced software engineering in Eastern Europe</h6>
+              </div>
+            </a>
+            <a href="#" class="article_link">
+              <div class="date">
+                Nov<br>15
+              </div>
+              <div class="title">
+                <h6>29 facts about outsourced software engineering in Eastern Europe</h6>
+              </div>
+            </a>
+            <a href="#" class="article_link">
+              <div class="date">
+                Nov<br>15
+              </div>
+              <div class="title">
+                <h6>29 facts about outsourced software engineering in Eastern Europe</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="copyright">
+          Copyright © 2002 - 2018 N-iX LLC
+        </div>
+      </div>
+    </footer>
+    <script src="js/bundle.js"></script>
+  </body>
+
+</html>
