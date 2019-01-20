@@ -1,0 +1,48 @@
+@mixin required_asterisk($color) {
+    content: '*';
+    color: $color;
+}
+
+@mixin shield($color) {
+    @extend %fa-icon;
+    @extend .fas;
+    content: fa-content($fa-var-shield-alt);
+    color: $color;
+}
+
+$fa-font-path: "../webfonts";
+$font-family-sans-serif:'Lato',
+sans-serif;
+//Colors
+$pumpkin-orange:#f58220;
+$light-grey:#86929f;
+$lighter-grey:#cad1dc;
+$dark-grey:#4d4f54;
+$body-color: #050505;
+$warning:$pumpkin-orange;
+//Navbars
+$navbar-padding-y:0;
+$navbar-padding-x: 0;
+$navbar-brand-padding-y:0;
+$navbar-light-color: #86929f;
+$navbar-light-hover-color: $pumpkin-orange;
+$navbar-light-active-color: $pumpkin-orange;
+//Breadcrumbs
+$breadcrumb-bg: transparent;
+$breadcrumb-divider: fa-content($fa-var-angle-right);
+$breadcrumb-divider-color: $lighter-grey;
+$breadcrumb-padding-x: 0;
+$nav-link-padding-x:0;
+$navbar-nav-link-padding-x: 0;
+$nav-link-padding-y:1.1rem;
+$breadcrumb-active-color: $dark-grey;
+//Forms
+$input-btn-font-size: 1rem;
+$input-btn-border-width:1px;
+$input-btn-padding-y: .375rem !default;
+$input-btn-padding-x: 0;
+$input-focus-border-color:$pumpkin-orange;
+//Buttons
+$btn-padding-y: 0.9rem;
+$btn-font-size: 0.9rem;
+$btn-border-radius:0;
