@@ -40,14 +40,27 @@ module.exports = {
         ]
       },
       {
-        test: /.(ttf|otf|eot|png|gif|svg|jpg|jpeg|woff(2)?)(\?[a-z0-9]+)?$/,
+        test: /.(ttf|otf|eot|png|gif|woff(2)?)(\?[a-z0-9]+)?$/,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'webfonts/', // where the fonts will go
-              publicPath: '../webfonts' // override the default path
+              outputPath: 'webfonts/',
+              publicPath: '../webfonts'
+            }
+          }
+        ]
+      },
+      {
+        test: /.(jpg|jpeg|svg)(\?[a-z0-9]+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img/',
+              publicPath: '../img'
             }
           }
         ]
