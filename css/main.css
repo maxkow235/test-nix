@@ -4221,7 +4221,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   src: url(../webfonts/fa-solid-900.eot);
-  src: url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-solid-900.woff2) format("woff2"), url(../webfonts/fa-solid-900.woff) format("woff"), url(../webfonts/fa-solid-900.ttf) format("truetype"), url(../webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
+  src: url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-solid-900.woff2) format("woff2"), url(../webfonts/fa-solid-900.woff) format("woff"), url(../webfonts/fa-solid-900.ttf) format("truetype"), url(../img/fa-solid-900.svg#fontawesome) format("svg"); }
 
 .fa,
 .fas,
@@ -4239,7 +4239,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   src: url(../webfonts/fa-brands-400.eot);
-  src: url(../webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-brands-400.woff2) format("woff2"), url(../webfonts/fa-brands-400.woff) format("woff"), url(../webfonts/fa-brands-400.ttf) format("truetype"), url(../webfonts/fa-brands-400.svg#fontawesome) format("svg"); }
+  src: url(../webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-brands-400.woff2) format("woff2"), url(../webfonts/fa-brands-400.woff) format("woff"), url(../webfonts/fa-brands-400.ttf) format("truetype"), url(../img/fa-brands-400.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -12273,7 +12273,7 @@ section.info {
         line-height: 1.52;
         position: relative; }
         section.info div.testimonials .slide_content p:before {
-          content: url(../webfonts/“.svg);
+          content: url(../img/“.svg);
           top: -10px;
           left: -33px;
           position: absolute; }
@@ -12331,7 +12331,7 @@ section.info {
       color: #4d4f54; }
 
 section.connect {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../webfonts/connect_banner.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/connect_banner.jpg);
   background-position: bottom center;
   background-size: cover;
   height: 302px;
