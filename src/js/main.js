@@ -1,4 +1,4 @@
-import $ from 'jquery';
+
 import 'bootstrap';
 import 'slick-carousel';
 
@@ -23,10 +23,21 @@ $(document).ready(function () {
     $('.testimonials .slider').slick({
         dots: true,
         arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         prevArrow: '<button class="slick-prev icon-larr slick-arrow" aria-label="Previous" type="button"></button>',
         nextArrow: '<button class="slick-next icon-rarr slick-arrow" aria-label="Next" type="button"></button>',
         appendDots: '.testimonialsDots',
         appendArrows: '.testimonialsArrows'
+    });
+    $('.footer_slider').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 4,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i class="fas fa-angle-left"></i></button>',
+        nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="fas fa-angle-right"></i></button>'
     });
 
 })
